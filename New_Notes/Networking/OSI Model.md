@@ -136,7 +136,7 @@ In this layer we only use IP addresses, devices such as routers that are capable
 | **Destination IP Address**                | 32 bits  | Receiver’s IP address                                                                                                                                                                                                                                | Receiver's IP address       |
 | **Options (optional)**                    | variable | Extra features like security, timestamping (used rarely)                                                                                                                                                                                             | Optional features           |
 | **Padding**                               | variable | Zeros added to make header length a multiple of 32 bits                                                                                                                                                                                              | Alignment (32-bit boundary) |
-#### QoS
+#### Quality Oof Service (QoS)
 8 bits:
 - First 6 for Differentiated Services Code Point (DSCP) for prioritizing the traffic. For example:
 
@@ -159,3 +159,60 @@ In this layer we only use IP addresses, devices such as routers that are capable
 | `10`     | ECN Capable Transport (ECT(0))        |
 | `11`     | Congestion Encountered (CE)           |
 *Note: 01 & 10 are the same.*
+
+## Transport Layer
+Responsible for end-to-end communication. It segment the data properly for packet transmission and ensure it is delivered accurately and in the right order. It has the following functionality:
+
+| Function                        | Description                                                                                                                                                                                                                                                                               |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Segmentation & Reassembly**   | Breaks large messages into smaller segments and reassembles them at the destination.                                                                                                                                                                                                      |
+| **End-to-End Connection**       | Manages connections between source and destination applications.                                                                                                                                                                                                                          |
+| **Reliable Data Transfer**      | Ensures data is delivered without errors or duplication (in protocols like TCP).                                                                                                                                                                                                          |
+| **Flow Control**                | Prevents overwhelming the receiver with too much data.                                                                                                                                                                                                                                    |
+| **Error Control**               | Detects and retransmits lost or corrupted segments.                                                                                                                                                                                                                                       |
+| **Multiplexing/Demultiplexing** | Multiplexing combines multiple data streams into a single signal, while demultiplexing separates them at the receiving end. This allows multiple users or applications to share the same network resources, like a single cable or wireless channel, without interfering with each other. |
+Transport Layer uses two different protocols:
+- **Transmission Control Protocol (TCP):** Reliable, provide  sync, reserve the connection for the whole session until data sent and received from the session layer is completed. Incorporate error checking which guarantee reliability. Used in emails, file sharing, web apps which require accuracy. 
+![[d47215ad75f503af0b06dacca9ebace6.svg]]
+
+- User Datagram Protocol (UDP): No sync, just send even if packets are lost, but very fast, and even app developers can customize the speed of sending the packets. Useful when in protocols that send small pieces of data such as device discovery protocols (e.g. [[ARP]] & [[DHCP]]) or in transmitting large files such as video streaming where losing some pixels is not an issue! 
+![[3259184a7fd3dafed265974c31fc8c46.svg]]
+
+### TCP Header
+
+
+![[Pasted image 20250708201238.jpg]]
+
+| Field                     | Size     | Description                                                                                                            |
+| ------------------------- | -------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **Source Port**           | 16 bits  | Identifies sending application or process                                                                              |
+| **Destination Port**      | 16 bits  | Identifies receiving application or process                                                                            |
+| **Sequence Number**       | 32 bits  | Represents the **first byte** of data in this segment which is important for Reordering packets                        |
+| **Acknowledgment Number** | 32 bits  | The next byte expected from the other side. Example: If `Ack = 1001`, that means byte `1000` was received successfully |
+| **Data Offset**           | 4 bits   | TCP header length                                                                                                      |
+| **Reserved**              | 3 bits   | Reserved for future use, must be 0                                                                                     |
+| **Flags (Control Bits)**  | 9 bits   | Control bits (SYN, ACK, FIN, etc.) explained in [[#Flags]]                                                             |
+| **Window Size**           | 16 bits  | Amount of data (in bytes) the receiver is willing to accept                                                            |
+| **Checksum**              | 16 bits  | Used for error-checking the header + data                                                                              |
+| **Urgent Pointer**        | 16 bits  | Points to the last byte of **urgent data** in the segment (used only when URG flag is set)                             |
+| **Options**               | Variable | Extended features like window scaling, timestamps                                                                      |
+| **Padding**               | Variable | Extra 0s to align header to 32-bit boundary                                                                            |
+#### Flags
+*Note: Typical 3-Way Handshake uses **SYN → SYN-ACK → ACK***
+
+| Flag           | Name        | Meaning                                          |
+| -------------- | ----------- | ------------------------------------------------ |
+| URG            | Urgent      | Urgent pointer is valid                          |
+| ACK            | Acknowledge | Acknowledgment number is valid                   |
+| PSH            | Push        | Ask receiver to pass data to the app immediately |
+| RST            | Reset       | Reset the connection                             |
+| SYN            | Synchronize | Initiate a connection (first step in handshake)  |
+| FIN            | Finish      | Close the connection                             |
+| (NS, CWR, ECE) | ECN-related | Used for Explicit Congestion Notification        |
+### UDP Header
+| Field                | Size    | Description                                                                                 |
+| -------------------- | ------- | ------------------------------------------------------------------------------------------- |
+| **Source Port**      | 16 bits | Port number of the sender (optional)                                                        |
+| **Destination Port** | 16 bits | Port number of the receiver                                                                 |
+| **Length**           | 16 bits | Length of the UDP header + data (in bytes)                                                  |
+| **Checksum**         | 16 bits | Error detection for UDP header + data (optional in IPv4 but usually used, required in IPv6) |
