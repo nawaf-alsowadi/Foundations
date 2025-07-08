@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "c1a4ddd758a692f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "4786ae800f5d3f31",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2d3211975582a21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/LANs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LANs"
+            }
+          },
+          {
+            "id": "c4e05d8c3959af30",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Assets/Pasted image 20250630221832.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250630221832"
+            }
+          },
+          {
+            "id": "5d45067d41caac4b",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "Assets/Pasted image 20250630221043.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20250630221043"
+            }
+          },
+          {
+            "id": "8625b55ed6d4e005",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/DHCP.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DHCP"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc26f3a7f49d99b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "0f3e99c420df761d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "310f724e69d74cfe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "21e2fe0ba2df519a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "v",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2ec6fe475593efe4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 207.5
+  },
+  "right": {
+    "id": "2b6a09121e54e1df",
+    "type": "split",
+    "children": [
+      {
+        "id": "d15825e439d197fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4c5d378791c3db6b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "6ec5c1a87bb38e84",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "7a0fbafb25057ae5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "963f246776c30714",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          },
+          {
+            "id": "74108ac61c5c71d5",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 215,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false
+    }
+  },
+  "active": "21e2fe0ba2df519a",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Welcome.md",
+    "Untitled Kanban.md",
+    "Networking/OSI Model.md",
+    "Assets/Pasted image 20250708181718.png",
+    "Assets/893620a3545775f0fbbd75ea4bc4a946.svg",
+    "Assets/ethernet-frame-structure.webp",
+    "Assets/Pasted image 20250707183215.jpg",
+    "Assets/Pasted image 20250707183124.png",
+    "Assets/Pasted image 20250707182807.png",
+    "Assets/Pasted image 20250707182243.jpg",
+    "Assets/Pasted image 20250707182015.png",
+    "Assets/6d17472b87f8792dadde3bb06aa1fdaa.svg",
+    "Networking/DHCP.md",
+    "Assets/Pasted image 20250707175250.png",
+    "Networking/ARP.md",
+    "Networking/Subnetting.md",
+    "Networking/LANs.md",
+    "Assets",
+    "Networking",
+    "test.md",
+    "2025-06-25.md",
+    "Excalidraw/Drawing 2025-06-25 20.14.04.excalidraw.md",
+    "Excalidraw/Drawing 2025-06-25 20.13.58.excalidraw.md",
+    "Untitled Kanban 1.md",
+    "Excalidraw"
+  ]
+}
