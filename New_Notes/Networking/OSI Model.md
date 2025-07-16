@@ -105,7 +105,7 @@ It is specifically inside the Network Interface Card (NIC,  piece of hardware th
 - **Destination MAC Address:** Physical address of the receiver.
 - **Source MAC Address:** Physical address of the sender.
 - **Length/Type:** Either the length of the data field or the protocol type (e.g., IPv4, ARP).
-- **Frame Check Sequence (FCS):** Used to detect errors in the packet. If error is happened, packet will be discarded/ a retransmission request is sent to the sender.
+- **Frame Check Sequence (FCS):** Used to detect errors in the packet. If error is happened, frame will be discarded/ a retransmission request is sent to the sender.
 
 ## Network Layer
 In this layer, the routing of the data we want to send takes place. Routing protocols such as *Open Shortest Path First (OSPF)* and *Routing Information Protocol (RIP)* determine the best optimal path for the data to transmitted.
@@ -140,12 +140,12 @@ In this layer we only use IP addresses, devices such as routers that are capable
 8 bits:
 - First 6 for Differentiated Services Code Point (DSCP) for prioritizing the traffic. For example:
 
-|DSCP Value|Binary|Meaning|Use Case|
-|---|---|---|---|
-|`000000`|0|Best Effort|Normal traffic|
-|`001010`|10|AF11 (Assured Forwarding)|Low-priority business data|
-|`101110`|46|Expedited Forwarding (EF)|Voice over IP (VoIP)|
-|`111000`|56|CS7 (Class Selector 7)|Network control (high priority)|
+| DSCP Value | Binary | Meaning                   | Use Case                        |
+| ---------- | ------ | ------------------------- | ------------------------------- |
+| `000000`   | 0      | Best Effort               | Normal traffic                  |
+| `001010`   | 10     | AF11 (Assured Forwarding) | Low-priority business data      |
+| `101110`   | 46     | Expedited Forwarding (EF) | Voice over IP (VoIP)            |
+| `111000`   | 56     | CS7 (Class Selector 7)    | Network control (high priority) |
 
 - Last 2 for Explicit Congestion Notification (ECN) used along with TCP to avoid dropping packets because of network congestion.
 	- **Routers** that support ECN can **mark packets** instead of dropping them when the network is congested.
@@ -171,13 +171,14 @@ Responsible for end-to-end communication. It segment the data properly for packe
 | **Flow Control**                | Prevents overwhelming the receiver with too much data.                                                                                                                                                                                                                                    |
 | **Error Control**               | Detects and retransmits lost or corrupted segments.                                                                                                                                                                                                                                       |
 | **Multiplexing/Demultiplexing** | Multiplexing combines multiple data streams into a single signal, while demultiplexing separates them at the receiving end. This allows multiple users or applications to share the same network resources, like a single cable or wireless channel, without interfering with each other. |
-Transport Layer uses two different protocols:
+Transport Layer uses different protocols such as:
 - **Transmission Control Protocol (TCP):** Reliable, provide  sync, reserve the connection for the whole session until data sent and received from the session layer is completed. Incorporate error checking which guarantee reliability. Used in emails, file sharing, web apps which require accuracy. 
 ![[d47215ad75f503af0b06dacca9ebace6.svg]]
 
-- User Datagram Protocol (UDP): No sync, just send even if packets are lost, but very fast, and even app developers can customize the speed of sending the packets. Useful when in protocols that send small pieces of data such as device discovery protocols (e.g. [[ARP]] & [[DHCP]]) or in transmitting large files such as video streaming where losing some pixels is not an issue! 
+- **User Datagram Protocol (UDP):** No sync, just send even if packets are lost, but very fast, and even app developers can customize the speed of sending the packets. Useful when in protocols that send small pieces of data such as device discovery protocols (e.g. [[ARP]] & [[DHCP]]) or in transmitting large files such as video streaming where losing some pixels is not an issue! 
 ![[3259184a7fd3dafed265974c31fc8c46.svg]]
-
+ 
+ *Note: Other protocols such as Stream Control Transmission Protocol (SCTP) is worth exploring.*
 ### TCP Header
 
 
@@ -193,22 +194,22 @@ Transport Layer uses two different protocols:
 | **Reserved**              | 3 bits   | Reserved for future use, must be 0                                                                                     |
 | **Flags (Control Bits)**  | 9 bits   | Control bits (SYN, ACK, FIN, etc.) explained in [[#Flags]]                                                             |
 | **Window Size**           | 16 bits  | Amount of data (in bytes) the receiver is willing to accept                                                            |
-| **Checksum**              | 16 bits  | Used for error-checking the header + data                                                                              |
+| **Checksum**              | 16 bits  | **Preserves the integrity of the packet** => Used for error-checking the header + data                                 |
 | **Urgent Pointer**        | 16 bits  | Points to the last byte of **urgent data** in the segment (used only when URG flag is set)                             |
 | **Options**               | Variable | Extended features like window scaling, timestamps                                                                      |
 | **Padding**               | Variable | Extra 0s to align header to 32-bit boundary                                                                            |
 #### Flags
-*Note: Typical 3-Way Handshake uses **SYN → SYN-ACK → ACK***
+*Note: Typical [[TCP IP Model & Protocols & Ports#3-Way Handshake]] uses **SYN → SYN/ACK → ACK***
 
-| Flag           | Name        | Meaning                                          |
-| -------------- | ----------- | ------------------------------------------------ |
-| URG            | Urgent      | Urgent pointer is valid                          |
-| ACK            | Acknowledge | Acknowledgment number is valid                   |
-| PSH            | Push        | Ask receiver to pass data to the app immediately |
-| RST            | Reset       | Reset the connection                             |
-| SYN            | Synchronize | Initiate a connection (first step in handshake)  |
-| FIN            | Finish      | Close the connection                             |
-| (NS, CWR, ECE) | ECN-related | Used for Explicit Congestion Notification        |
+| Flag           | Name        | Meaning                                                             |
+| -------------- | ----------- | ------------------------------------------------------------------- |
+| URG            | Urgent      | Urgent pointer is valid                                             |
+| ACK            | Acknowledge | Acknowledgment number is valid                                      |
+| PSH            | Push        | Ask receiver to pass data to the app immediately                    |
+| RST            | Reset       | Reset the connection in case some failures happen in the connection |
+| SYN            | Synchronize | Initiate a connection (first step in handshake)                     |
+| FIN            | Finish      | Close the connection                                                |
+| (NS, CWR, ECE) | ECN-related | Used for Explicit Congestion Notification                           |
 ### UDP Header
 | Field                | Size    | Description                                                                                 |
 | -------------------- | ------- | ------------------------------------------------------------------------------------------- |
@@ -216,3 +217,74 @@ Transport Layer uses two different protocols:
 | **Destination Port** | 16 bits | Port number of the receiver                                                                 |
 | **Length**           | 16 bits | Length of the UDP header + data (in bytes)                                                  |
 | **Checksum**         | 16 bits | Error detection for UDP header + data (optional in IPv4 but usually used, required in IPv6) |
+## Session Layer
+
+Responsible for everything related to the session between the end devices including:
+
+| Function                     | Description                                                                                            |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Session Establishment**    | Sets up and tears down connections between applications.                                               |
+| **Dialog Management**        | Controls who can send data and when (e.g., full-duplex or token-based half-duplex).                    |
+| **Synchronization**          | Uses checkpoints in long data streams to recover from failures.![[functions_of_session_layer2 1.webp]] |
+| **Activity Management**      | Divides message streams into independent units (aka activities) for processing.                        |
+| **Resynchronization**        | Restores communication to a known state after disruptions.                                             |
+| **Data Transfer Management** | Oversees the exchange of data between systems.![[functions_of_session_layer5.webp]]                    |
+How It Works:
+- Negotiates session parameters (e.g., direction of communication, authentication).
+- Inserts **checkpoints** to allow resuming data transfer after a failure.
+- Uses **tokens** to manage who can transmit data.
+- Gracefully closes sessions, ensuring no data is lost.
+
+Session layer protocols examples:
+
+| Protocol                                        | Purpose                                                                                                                                                        |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **RTCP (Real-time Transport Control Protocol)** | Provides feedback on media stream quality in real-time sessions.                                                                                               |
+| **PPTP (Point-to-Point Tunneling Protocol)**    | Establishes VPN sessions over IP networks.                                                                                                                     |
+| **PAP (Password Authentication Protocol)**      | Authenticates users over PPP connections.                                                                                                                      |
+| **RPCP (Remote Procedure Call Protocol)**       | Allows code on one machine to call functions on another.                                                                                                       |
+| **SDP (Sockets Direct Protocol)**               | Enhances socket communication using Remote Direct Memory Access (RDMA, allow both ends to access memory of each other directly!) for high-speed data transfer. |
+Devices That Operate at the Session Layer
+- **Firewalls** – Filter and manage session states.
+- **Proxy Servers** – Create/manage client-server sessions.
+- **Session Border Controllers (SBCs)** – Manage VoIP sessions.
+- **Application Servers** – Handle web or app-based session creation.
+
+|Layer|Focus|
+|---|---|
+|**Session Layer**|Manages sessions, dialogues, checkpoints, and synchronization.|
+|**Transport Layer (e.g., TCP)**|Provides reliable data delivery, sequencing, and error control.|
+_Note_: The session layer's functions are typically **merged into** the **application layer** or partially handled by the **transport layer (TCP)**. Only if it is required by the applications, it is gonna use one of the session layer protocols which add the necessary data **inside the data payload** (tokens, markers, state info, ... etc.)
+
+## Presentation Layer
+AKA the translator or syntax layer, it is responsible to transform the data into readable and secure formats for both ends. Its main role is to format, encrypt/decrypt, encode/decode. compress/uncompress the data by agreeing on how the data will be represented on both ends.
+
+| Protocol                                    | Purpose                                                          |
+| ------------------------------------------- | ---------------------------------------------------------------- |
+| **LPP (Lightweight Presentation Protocol)** | ISO presentation services over TCP/IP.                           |
+| **NCP (NetWare Core Protocol)**             | File and print services in Novell NetWare.                       |
+| **NDR (Network Data Representation)**       | Defines data types and their encoding.                           |
+| **XDR (External Data Representation)**      | Standard data format for cross-platform data exchange.           |
+| **SSL/TLS**                                 | Secure encryption of data for web and application communication. |
+Some attacks in this layer:
+
+| Attack Type                  | Description                                               |
+| ---------------------------- | --------------------------------------------------------- |
+| **Man-in-the-Middle (MITM)** | Intercepts and reads or alters transmitted data.          |
+| **SSL/TLS Downgrade**        | Forces weaker encryption protocols for easier decryption. |
+| **Certificate Spoofing**     | Fakes a certificate to impersonate a trusted source.      |
+| **Code Injection**           | Exploits poor parsing or formatting of input data.        |
+
+## Application Layer
+It's not the user interface of the application itself, but rather **the layer that provides the functionalities and services** **that** user-facing **applications use to interact with the network.**
+
+It utilizes various protocols to facilitate **different types of communication**, including HTTP, FTP, SMTP, DNS, and more.
+
+One interesting app protocol is called **Network File System (NFS)** with port number 2049. It allow mounting files from remote hosts and interact with them as they are locally available by using RPC calls.
+![[nfs.gif]]
+
+## Packets vs Frames vs Segment
+![[Pasted image 20250712142857.jpg]]
+**Segment**: Data + TCP/UDP header
+**Packets:** Segment + IP address, can have different structure based on the type of the packet
+**Frames:** MAC address + Packet

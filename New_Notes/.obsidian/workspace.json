@@ -27,12 +27,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/OSI Model.md",
+                "file": "Networking/TCP IP Model & Protocols.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OSI Model"
+              "title": "TCP IP Model & Protocols"
+            }
+          },
+          {
+            "id": "089c96fa1a626e67",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/TCP IP Model & Protocols.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP IP Model & Protocols"
+            }
+          },
+          {
+            "id": "1bf4f4bb1ff2cd3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/TCP IP Model & Protocols & Ports.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "TCP IP Model & Protocols & Ports"
+            }
+          },
+          {
+            "id": "330848ed0150a9dd",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "Untitled Kanban.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    true
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Untitled Kanban"
+            }
+          },
+          {
+            "id": "38bd174cdfd1596f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/Port Forwarding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Port Forwarding"
             }
           },
           {
@@ -62,7 +124,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -119,7 +181,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 207.5
+    "width": 200
   },
   "right": {
     "id": "2b6a09121e54e1df",
@@ -226,34 +288,36 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c4e05d8c3959af30",
+  "active": "38bd174cdfd1596f",
   "lastOpenFiles": [
-    "Assets/Pasted image 20250708201238.jpg",
-    "Assets/3259184a7fd3dafed265974c31fc8c46.svg",
-    "Assets/d47215ad75f503af0b06dacca9ebace6.svg",
-    "Assets/Pasted image 20250708195036.jpg",
-    "Assets/Pasted image 20250708195005.jpg",
-    "Assets/Pasted image 20250630221832.png",
-    "Networking/LANs.md",
-    "Untitled.md",
-    "Welcome.md",
-    "Untitled Kanban.md",
+    "Networking/Subnetting.md",
+    "Networking/TCP IP Model & Protocols & Ports.md",
+    "Networking/Port Forwarding.md",
     "Networking/OSI Model.md",
-    "Assets/Pasted image 20250708181718.png",
-    "Assets/893620a3545775f0fbbd75ea4bc4a946.svg",
-    "Assets/ethernet-frame-structure.webp",
-    "Assets/Pasted image 20250707183215.jpg",
-    "Assets/Pasted image 20250707183124.png",
     "Networking/DHCP.md",
     "Networking/ARP.md",
-    "Networking/Subnetting.md",
+    "Networking/LANs.md",
+    "Excalidraw/Drawing 2025-07-16 17.49.41.excalidraw.md",
+    "Untitled Kanban.md",
+    "Excalidraw",
+    "Untitled Kanban 1.md",
+    "Assets/Pasted image 20250714180756.png",
+    "Assets/eb63570eb9f31d26ebd8207ec08058bc.svg",
+    "Assets/326ef12878c2f669ad2374dba3635a44.svg",
+    "Untitled.md",
+    "Assets/53d459ccda57e5fdea0dafe7e64ffe7c.svg",
+    "Assets/Pasted image 20250712230741.png",
+    "Assets/d29463eda80fa9e4cbe78b16aa5d9f87.svg",
+    "Assets/6d8fe891-e992-42b7-a735-6ee2aeb7902b_2107x1318.webp",
+    "Assets/67dc0504ffa42cac0579cfeb64227ccb.svg",
+    "Assets/Pasted image 20250712191810.jpg",
+    "Assets/Pasted image 20250712142857.jpg",
+    "Welcome.md",
     "Assets",
     "Networking",
     "test.md",
     "2025-06-25.md",
     "Excalidraw/Drawing 2025-06-25 20.14.04.excalidraw.md",
-    "Excalidraw/Drawing 2025-06-25 20.13.58.excalidraw.md",
-    "Untitled Kanban 1.md",
-    "Excalidraw"
+    "Excalidraw/Drawing 2025-06-25 20.13.58.excalidraw.md"
   ]
 }
