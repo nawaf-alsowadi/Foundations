@@ -89,12 +89,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/Port Forwarding.md",
+                "file": "Networking/VPN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Port Forwarding"
+              "title": "VPN"
             }
           },
           {
@@ -263,14 +263,23 @@
               "icon": "lucide-file",
               "title": "Plugin no longer active"
             }
+          },
+          {
+            "id": "5d3ff79a3054dbf9",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 215,
-    "collapsed": true
+    "width": 215
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -285,14 +294,19 @@
       "obsidian-advanced-slides:Show Slide Preview": false,
       "obsidian-kanban:Create new board": false,
       "omnisearch:Omnisearch": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "38bd174cdfd1596f",
   "lastOpenFiles": [
+    "Networking/Firewalls.md",
+    "Networking/VPN.md",
+    "Assets/stateless-vs-stateful-firewall-table.webp",
+    "Assets/Pasted image 20250720223812.png",
+    "Networking/Port Forwarding.md",
     "Networking/Subnetting.md",
     "Networking/TCP IP Model & Protocols & Ports.md",
-    "Networking/Port Forwarding.md",
     "Networking/OSI Model.md",
     "Networking/DHCP.md",
     "Networking/ARP.md",
@@ -310,8 +324,6 @@
     "Assets/d29463eda80fa9e4cbe78b16aa5d9f87.svg",
     "Assets/6d8fe891-e992-42b7-a735-6ee2aeb7902b_2107x1318.webp",
     "Assets/67dc0504ffa42cac0579cfeb64227ccb.svg",
-    "Assets/Pasted image 20250712191810.jpg",
-    "Assets/Pasted image 20250712142857.jpg",
     "Welcome.md",
     "Assets",
     "Networking",
