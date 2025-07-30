@@ -25,28 +25,20 @@
             "id": "c4e05d8c3959af30",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/TCP IP Model & Protocols.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "TCP IP Model & Protocols"
+              "title": "New tab"
             }
           },
           {
             "id": "089c96fa1a626e67",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/TCP IP Model & Protocols.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "TCP IP Model & Protocols"
+              "title": "New tab"
             }
           },
           {
@@ -67,34 +59,14 @@
             "id": "330848ed0150a9dd",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "Untitled Kanban.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    true
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "Untitled Kanban"
-            }
-          },
-          {
-            "id": "38bd174cdfd1596f",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/VPN.md",
+                "file": "Networking/VPN & IPSec & TLS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VPN"
+              "title": "VPN & IPSec & TLS"
             }
           },
           {
@@ -115,16 +87,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/DHCP.md",
+                "file": "Networking/VPN & IPSec & TLS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DHCP"
+              "title": "VPN & IPSec & TLS"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -260,8 +232,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -279,7 +251,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -298,32 +270,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "38bd174cdfd1596f",
+  "active": "8625b55ed6d4e005",
   "lastOpenFiles": [
+    "Assets/4603275cd98c93aeb8c46b1b1afa0ba6.svg",
+    "Assets/Pasted image 20250730214056.png",
+    "Assets/Pasted image 20250730213921.png",
+    "Assets/Pasted image 20250730213835.png",
+    "Assets/Pasted image 20250730213820.png",
+    "Assets/Pasted image 20250730213814.png",
+    "Assets/Pasted image 20250730212641.png",
+    "Assets/Pasted image 20250730212625.png",
+    "Assets/Pasted image 20250730212600.png",
+    "Assets/Pasted image 20250730212345.png",
+    "Assets/Pasted image 20250730204025.png",
+    "Networking/DHCP.md",
+    "Networking/VPN & IPSec & TLS.md",
+    "Networking/TCP IP Model & Protocols & Ports.md",
+    "Networking/LANs.md",
+    "Untitled Kanban.md",
+    "[.md",
     "Networking/Firewalls.md",
-    "Networking/VPN.md",
-    "Assets/stateless-vs-stateful-firewall-table.webp",
-    "Assets/Pasted image 20250720223812.png",
+    "Networking/OSI Model Layers.md",
     "Networking/Port Forwarding.md",
     "Networking/Subnetting.md",
-    "Networking/TCP IP Model & Protocols & Ports.md",
-    "Networking/OSI Model.md",
-    "Networking/DHCP.md",
     "Networking/ARP.md",
-    "Networking/LANs.md",
     "Excalidraw/Drawing 2025-07-16 17.49.41.excalidraw.md",
-    "Untitled Kanban.md",
     "Excalidraw",
     "Untitled Kanban 1.md",
-    "Assets/Pasted image 20250714180756.png",
-    "Assets/eb63570eb9f31d26ebd8207ec08058bc.svg",
-    "Assets/326ef12878c2f669ad2374dba3635a44.svg",
     "Untitled.md",
-    "Assets/53d459ccda57e5fdea0dafe7e64ffe7c.svg",
-    "Assets/Pasted image 20250712230741.png",
-    "Assets/d29463eda80fa9e4cbe78b16aa5d9f87.svg",
-    "Assets/6d8fe891-e992-42b7-a735-6ee2aeb7902b_2107x1318.webp",
-    "Assets/67dc0504ffa42cac0579cfeb64227ccb.svg",
     "Welcome.md",
     "Assets",
     "Networking",

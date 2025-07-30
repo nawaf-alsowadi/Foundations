@@ -1,5 +1,5 @@
 ![[Pasted image 20250712191810.jpg]]
-TCP/IP (aka DoD or Department of Defense) model has four layers compared to [[OSI Model]]. It is **more practical, real-world, and used everywhere since it is considered as the basis of the internet** model whereas [[OSI Model]] is more theoretic model used for teaching and designs. It is also a family of protocols in each layer including:
+TCP/IP (aka DoD or Department of Defense) model has four layers compared to [[OSI Model Layers]]. It is **more practical, real-world, and used everywhere since it is considered as the basis of the internet** model whereas [[OSI Model Layers]] is more theoretic model used for teaching and designs. It is also a family of protocols in each layer including:
 
 |Layer|Protocol Examples|
 |---|---|
@@ -9,10 +9,10 @@ TCP/IP (aka DoD or Department of Defense) model has four layers compared to [[OS
 |Network Access|Ethernet, Wi-Fi, PPP, Frame Relay|
 
 ## 3-Way Handshake
-Recalling [[OSI Model#Transport Layer]] & [[OSI Model#TCP Header]], TCP must establish a connection before the sending of the data begin. In order to establish the connection, a series of packets must be sent in the following order.
+Recalling [[OSI Model Layers#Transport Layer]] & [[OSI Model Layers#TCP Header]], TCP must establish a connection before the sending of the data begin. In order to establish the connection, a series of packets must be sent in the following order.
 ![[67dc0504ffa42cac0579cfeb64227ccb.svg]]
 ![[6d8fe891-e992-42b7-a735-6ee2aeb7902b_2107x1318.webp]]
-More information about the packets in [[OSI Model#Flags]].
+More information about the packets in [[OSI Model Layers#Flags]].
 *Note: Server do not ack every packet received, it instead use cumulative acks and delayed acks to optimize performance. So, it sends one ack for multiple received packets (usually 2 segments of data after slicing if needed, default behavior and can be customized) / after (usually) around ~200 ms if it is one segment, to let more data to arrive first and reduce overhead.*
 
 Both parties must agree on the **same** **random Initial Sequence Number (ISN)** then increment it by 1 after each message. For example:
@@ -24,7 +24,7 @@ After finishing sending the data we close the connection in the following steps.
 ![[d29463eda80fa9e4cbe78b16aa5d9f87.svg]]
 
 ## UDP/IP Protocol
-UDP [[OSI Model#Transport Layer]] & [[OSI Model#UDP Header]] is a stateless (doesn't require the connection to be established) protocol. Just throw the packets and there is not gurantee it will be received!
+UDP [[OSI Model Layers#Transport Layer]] & [[OSI Model Layers#UDP Header]] is a stateless (doesn't require the connection to be established) protocol. Just throw the packets and there is not gurantee it will be received!
 
 ![[53d459ccda57e5fdea0dafe7e64ffe7c.svg]]
 
