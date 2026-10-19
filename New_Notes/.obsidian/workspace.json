@@ -11,16 +11,54 @@
             "id": "f8fa20a3aeba2aa9",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "Untitled Kanban 2.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": []
-                }
+                "file": "Windows/File Systems.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "Untitled Kanban 2"
+              "icon": "lucide-file",
+              "title": "File Systems"
+            }
+          },
+          {
+            "id": "979f8b498ae11bdb",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/AES-CBC Decryption Example.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "AES-CBC Decryption Example"
+            }
+          },
+          {
+            "id": "e010727ff2178a26",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/System32 & Windows Folders.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "System32 & Windows Folders"
+            }
+          },
+          {
+            "id": "228dbb8871f456d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Gap Analysis/Windows System Configuration Gap Analysis.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Windows System Configuration Gap Analysis"
             }
           },
           {
@@ -69,12 +107,154 @@
             "id": "5d45067d41caac4b",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/AES-CBC Decryption Example.md"
+                "file": "Containers.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "AES-CBC Decryption Example"
+              "icon": "lucide-file",
+              "title": "Containers"
+            }
+          },
+          {
+            "id": "2163b2ff47bd0ed0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/LB.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LB"
+            }
+          },
+          {
+            "id": "6a127585fe23199c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Network Scanning/Nmap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Nmap"
+            }
+          },
+          {
+            "id": "0f929da41ff7ea05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Networking/LANs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LANs"
+            }
+          },
+          {
+            "id": "359d05615e0233d5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "File Permissions/Linux & Windows & SMB File Permissions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linux & Windows & SMB File Permissions"
+            }
+          },
+          {
+            "id": "c0caaa5a8a6301ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "File Permissions/Linux & Windows & SMB File Permissions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linux & Windows & SMB File Permissions"
+            }
+          },
+          {
+            "id": "abf220fc9da79875",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drive Sanitization/nkjbn.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "nkjbn"
+            }
+          },
+          {
+            "id": "2c0de4e80db6ce01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Drive Sanitization/Delete & Format & Shred & Sanitize Data and Drives.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Delete & Format & Shred & Sanitize Data and Drives"
+            }
+          },
+          {
+            "id": "be151b54acf6da8f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows Allow & Deny Lists/Implementing Allow Lists and Deny Lists in Windows.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Implementing Allow Lists and Deny Lists in Windows"
+            }
+          },
+          {
+            "id": "3ec97216a219efe2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Containers.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Containers"
+            }
+          },
+          {
+            "id": "fedb569ea3757039",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Implement Security Controls/Preventive Security Controls.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Preventive Security Controls"
             }
           },
           {
@@ -83,12 +263,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Basic Web/HTTPS.md",
-                "mode": "preview",
+                "file": "Implement Security Controls/Directive Security Controls.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HTTPS"
+              "title": "Directive Security Controls"
             }
           },
           {
@@ -97,16 +277,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/DNS.md",
+                "file": "Implement Security Controls/Corrective Security Controls.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DNS"
+              "title": "Corrective Security Controls"
+            }
+          },
+          {
+            "id": "af2b2747fcfd6dfa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic Web/Web Server.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Web Server"
+            }
+          },
+          {
+            "id": "5cb4b8f368cc2973",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/File Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "File Systems"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -126,7 +334,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -163,7 +373,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 340.20001220703125
   },
   "right": {
     "id": "2b6a09121e54e1df",
@@ -261,7 +471,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -281,48 +492,52 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1fdc26ee4b2f4d0c",
+  "active": "0f929da41ff7ea05",
   "lastOpenFiles": [
-    "Untitled Kanban 2.md",
-    "Networking/DNS.md",
-    "Untitled Kanban 1.md",
-    "Untitled.md",
-    "Linux Essitntials",
-    "Web Attacks/HTML Injection.md",
-    "Basic Web/HTTPS.md",
-    "Basic Web/Web Server.md",
-    "Networking/CDN.md",
-    "Networking/DHCP.md",
-    "Basic Web/HTML.md",
-    "Networking/Network Flow.md",
-    "Basic Web/WAF.md",
-    "Networking/LB.md",
-    "Basic Web/JavaScript.md",
-    "Networking/OSI Model Layers.md",
-    "Networking/Firewalls.md",
-    "Excalidraw/AES-CBC Decryption Example.md",
-    "Assets/Pasted image 20250819195143.png",
-    "Assets/nfs.gif",
-    "Networking/TCP IP Model & Protocols & Ports.md",
-    "Networking/VPN & IPSec & TLS.md",
-    "Assets/24cb6468b4e51e8d8bbe7872e96a22b3.svg",
-    "Assets/Pasted image 20250819184634.jpg",
-    "Assets/829e340231cd8aa9f5ed2fa5c464ea80 1.svg",
-    "Assets/829e340231cd8aa9f5ed2fa5c464ea80.svg",
-    "Assets/Pasted image 20250819183139.png",
-    "Assets/pic_htmltree.gif",
-    "Assets/Pasted image 20250818192851.png",
-    "Assets/Pasted image 20250818192733.png",
-    "Web Attacks",
-    "Basic Web",
-    "Networking/Port Forwarding.md",
-    "Excalidraw/AES-CBC Decryption.md",
-    "Excalidraw/Drawing 2025-07-16 17.49.41.excalidraw.md",
-    "Excalidraw/Drawing 2025-08-03 20.35.48.excalidraw.md",
-    "Untitled Kanban.md",
+    "Social Engineering/SET Linux.md",
+    "Social Engineering",
+    "Network Scanning/Nmap.md",
+    "Automation Scripts/Linux Automation of Malware Scanning & FW IP Blocking Based on Threat Feeds.md",
+    "Network Scanning",
     "Networking/LANs.md",
-    "Excalidraw",
-    "Assets",
-    "Networking"
+    "Networking/LB.md",
+    "Networking/Firewalls.md",
+    "Networking/DNS.md",
+    "Networking/DHCP.md",
+    "Networking/CDN.md",
+    "Networking/ARP.md",
+    "Networking/OSI Model Layers.md",
+    "Virtualization.md",
+    "Containers.md",
+    "Untitled 1.base",
+    "Windows/File Systems.md",
+    "Untitled.base",
+    "Untitled 3.base",
+    "Untitled 2.base",
+    "Windows Allow & Deny Lists/Implementing Allow Lists and Deny Lists in Windows.md",
+    "Automation Scripts",
+    "Playbook/High-CPU Incident Response.md",
+    "Windows Allow & Deny Lists",
+    "Playbook/Untitled",
+    "Playbook",
+    "Untitled 1.md",
+    "Untitled 2.md",
+    "Drive Sanitization/Delete & Format & Shred & Sanitize Data and Drives.md",
+    "File Permissions/Linux & Windows & SMB File Permissions.md",
+    "Backup & Drive Sanitization/Implement Backups (Windows Server 2019).md",
+    "Passwords Cracking/John the Ripper & Hydra.md",
+    "Windows/System32 & Windows Folders.md",
+    "Windows/Encryption File System (EFS) & Data Recovery Agent (DRA).md",
+    "Windows/Account, Profiles, and Permissions.md",
+    "Assets/Pasted image 20260227185423.png",
+    "Assets/Pasted image 20260227185210.png",
+    "Assets/Pasted image 20260225023732.png",
+    "Assets/Pasted image 20260225013619.png",
+    "Assets/Pasted image 20260225013423.png",
+    "Assets/Pasted image 20260225013251.png",
+    "Assets/Pasted image 20260225013249.png",
+    "Assets/Pasted image 20260225013123.png",
+    "Assets/Pasted image 20260225013026.png",
+    "Assets/Pasted image 20260224192641.png"
   ]
 }

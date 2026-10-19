@@ -25,7 +25,7 @@ Used to identify the [[#Elements/Tags]] that we will apply some options on (styl
 - And much more! [See All Attributes](https://www.w3schools.com/tags/ref_attributes.asp)
 
 ### Document Object Model (DOM)
-The HTML DOM is a standard for how to get, change, add, or delete HTML [[#Elements/Tags]]. DOM define [[#Elements/Tags]] the as **objects**. It also define [[#Elements/Tags]] as:
+The HTML DOM is a standard for how to get, change, add, or delete HTML [[#Elements/Tags]]. DOM define [[#Elements/Tags]] as **objects**. It also define [[#Elements/Tags]] as:
 - The **properties** of all HTML [[#Elements/Tags]] to **set values** on them or **change** the current properties.
 - The **methods** to access all HTML elements [[#Elements/Tags]] and **perform actions** on them
 - The **events** for all HTML elements [[#Elements/Tags]]
